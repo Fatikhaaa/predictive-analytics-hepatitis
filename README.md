@@ -145,7 +145,7 @@ Berdasarkan hasil dari perhitungan outlier dengan menggunakan metode Interquarti
    Banyak fitur seperti **ALT, AST, BIL, GGT, dan CREA** memperlihatkan skewness tinggi dan rentang nilai yang luas. Hal ini mengindikasikan perlunya transformasi atau penanganan outlier untuk meningkatkan performa model prediktif.
 4. **Fitur `Unnamed: 0`:** Histogram fitur ini merata dan tidak memiliki arti informatif. Untuk fitur ini akan dihapus pada tahap data preparation karena tidak diperlukan.
 
-**Kesimpulan**
+**Kesimpulan :**
 Sebagian besar fitur medis memiliki distribusi skewed, dimana fitur-fitur dengan distribusi normal (seperti CHE dan PROT) menunjukkan kestabilan dan bisa menjadi indikator tambahan yang berguna dalam pemodelan. Sementara itu, fitur dengan distribusi miring dan outlier tinggi (seperti GGT dan AST) dapat menjadi sinyal penting untuk mengidentifikasi kondisi abnormal seperti Hepatitis C.
   
 ### 2. Bivariate Analysis
@@ -153,6 +153,68 @@ Sebagian besar fitur medis memiliki distribusi skewed, dimana fitur-fitur dengan
 - **Hubungan antara fitur-fitur terhadap fitur target (Category)**
   ![Bivariate 1](image/bivariate-1.png)
 
+  1. **ALB (Albumin)**:
+
+   * **Distribusi**: ALB pada kategori Normal memiliki median yang lebih tinggi daripada Abnormal, dengan rentang nilai lebih besar.
+   * **Outlier**: Terdapat beberapa outlier pada kedua kategori, yang menunjukkan adanya individu dengan nilai ALB yang sangat rendah atau sangat tinggi.
+   * **Variabilitas**: Rentang interkuartil (IQR) cukup sempit, menunjukkan sebagian besar data berada dalam rentang yang stabil.
+
+2. **ALP (Alkaline Phosphatase)**:
+
+   * **Distribusi**: Nilai ALP pada kategori Abnormal secara umum lebih tinggi daripada Normal.
+   * **Outlier**: Ada banyak outlier pada kategori Abnormal, terutama di nilai yang sangat tinggi, mengindikasikan adanya variabilitas tinggi pada data ini.
+   * **Variabilitas**: Kategori Abnormal memiliki IQR yang lebih lebar, menunjukkan distribusi data lebih menyebar dibandingkan Normal.
+
+3. **ALT (Alanine Transaminase)**:
+
+   * **Distribusi**: Median ALT lebih tinggi pada kategori Abnormal.
+   * **Outlier**: Banyak outlier pada kedua kategori, terutama di nilai tinggi pada Abnormal.
+   * **Variabilitas**: Abnormal memiliki rentang distribusi yang jauh lebih lebar dibandingkan Normal.
+
+4. **AST (Aspartate Transaminase)**:
+
+   * **Distribusi**: Nilai AST jauh lebih tinggi pada kategori Abnormal dibandingkan Normal.
+   * **Outlier**: Banyak outlier pada kategori Abnormal, tetapi ini dapat menjadi indikasi penting dalam membedakan kondisi.
+   * **Variabilitas**: Rentang distribusi sangat lebar pada Abnormal, sementara Normal cenderung lebih terkonsentrasi.
+
+5. **BIL (Bilirubin)**:
+
+   * **Distribusi**: Nilai BIL pada kategori Abnormal jauh lebih tinggi dibandingkan Normal.
+   * **Outlier**: Sangat banyak outlier pada kategori Normal, yang menunjukkan beberapa individu memiliki nilai abnormal meskipun tergolong Normal.
+   * **Variabilitas**: Abnormal memiliki distribusi yang lebih terpusat dibandingkan Normal.
+
+6. **CHE (Cholinesterase)**:
+
+   * **Distribusi**: Perbedaan antara kategori Normal dan Abnormal kurang signifikan.
+   * **Outlier**: Beberapa outlier pada kategori Normal dengan nilai sangat tinggi.
+   * **Variabilitas**: Distribusi pada kedua kategori cukup tumpang tindih.
+
+7. **CHOL (Cholesterol)**:
+
+   * **Distribusi**: CHOL pada kategori Normal cenderung lebih tinggi daripada Abnormal, tetapi perbedaan kecil.
+   * **Outlier**: Ada beberapa outlier, terutama pada kategori Normal.
+   * **Variabilitas**: Rentang distribusi data cukup seragam pada kedua kategori.
+
+8. **CREA (Creatinine)**:
+
+   * **Distribusi**: Distribusi CREA hampir sama antara Normal dan Abnormal.
+   * **Outlier**: Beberapa outlier pada kedua kategori, terutama di nilai tinggi.
+   * **Variabilitas**: Rentang distribusi cukup sempit, menunjukkan data ini kurang variabel.
+
+9. **GGT (Gamma-Glutamyl Transferase)**:
+
+   * **Distribusi**: Nilai GGT pada kategori Abnormal jauh lebih tinggi daripada Normal.
+   * **Outlier**: Banyak outlier pada kategori Abnormal, mengindikasikan adanya individu dengan nilai GGT yang sangat tinggi.
+   * **Variabilitas**: Rentang distribusi sangat lebar pada Abnormal.
+
+10. **PROT (Protein Total)**:
+
+    * **Distribusi**: PROT sedikit lebih tinggi pada Abnormal dibandingkan Normal, tetapi distribusinya cukup tumpang tindih.
+    * **Outlier**: Beberapa outlier di kedua kategori, tetapi jumlahnya tidak terlalu banyak.
+    * **Variabilitas**: IQR pada kedua kategori relatif serupa.
+
+### Kesimpulan
+Fitur-fitur yang paling relevan untuk memprediksi kondisi (Normal atau Abnormal) berdasarkan visualisasi yaitu **BIL**, **AST**, **ALP**, **ALT**, dan **GGT** yang mana memiliki rentang distribusi yang berbeda jelas dan adanya outlier pada Abnormal. Hal ini memperkuat relevansi fitur tersebut untuk prediksi. Sedangkan fitur CHE dan CREA tampaknya kurang relevan karena distribusi antara kategori Normal dan Abnormal cenderung mirip.
   Berdasarkan hasil analisis visualisasi boxplot, terlihat adanya perbedaan distribusi yang mencolok antara kelompok pasien dengan kondisi hati normal dan yang mengalami gangguan/abnormal seperti hepatitis, sirosis, maupun fibrosis. Parameter ALB (Albumin) dan ALP (Alkaline Phosphatase) menunjukkan bahwa nilai pada kelompok abnormal cenderung lebih rendah dibandingkan dengan kelompok normal, dengan sebaran yang lebih lebar yang mengindikasikan adanya ketidakstabilan fisiologis. Sebaliknya, ALT (Alanine Transaminase) memperlihatkan pola distribusi yang lebih tinggi dan menyebar luas pada kelompok abnormal, menandakan bahwa peningkatan kadar ALT dapat menjadi indikator awal adanya kerusakan hati. Hal serupa juga terjadi pada AST (Aspartate Transaminase) dan BIL (Bilirubin), yang menunjukkan peningkatan signifikan pada pasien dengan gangguan hati, dan bahkan memperlihatkan outlier pada kelompok normal meskipun tidak sebanyak pada kelompok abnormal.
 
   Pada variabel CHE (Cholinesterase), nilai pada kelompok abnormal sedikit lebih rendah dengan distribusi yang lebih lebar dibandingkan normal, yang menggambarkan berkurangnya aktivitas enzim akibat gangguan fungsi hati. Parameter CHOL (Cholesterol) dan CREA (Creatinine) juga cenderung menurun pada pasien dengan kondisi abnormal, dengan distribusi nilai yang lebih sempit di kelompok abnormal. Hal ini menunjukkan bahwa kadar kolesterol dan kreatinin juga dapat menurun ketika fungsi hati menurun, meskipun perbedaan antara kelompok tidak setajam pada AST atau BIL. Sementara itu, GGT (Gamma-Glutamyl Transferase) menunjukkan lonjakan tajam pada kelompok abnormal, menjadikannya salah satu indikator paling jelas dalam mendeteksi kelainan hati, meskipun beberapa outlier juga ditemukan pada kelompok normal.
@@ -163,16 +225,15 @@ Sebagian besar fitur medis memiliki distribusi skewed, dimana fitur-fitur dengan
 - **Analisis Distribusi Fitur-fitur Numerik dengan Data Kategorikal**
   ![Multivariate 1](image/multivariate-1.png)
 
-  Berdasarkan visualisasi diatas, dapat disimpulkan bahwa parameter AST, BIL, CHE, dan GGT menjadi yang paling relevan untuk membedakan kategori normal dan abnormal, terutama GGT pada laki-laki. Parameter seperti ALB, ALP, CHOL, dan PROT tidak menunjukkan perbedaan mencolok, sehingga kurang relevan sebagai indikator kondisi patologis. Sedangkan, untuk Parameter CREA lebih menggambarkan perbedaan berdasarkan jenis kelamin daripada kondisi patologis.
-   
+  Berdasarkan visualisasi diatas, dapat disimpulkan bahwa parameter AST, BIL, dan GGT menjadi yang paling relevan untuk membedakan kategori normal dan abnormal. Parameter seperti ALB, ALP, CHE, CHOL, CREA dan PROT tidak menunjukkan perbedaan mencolok, sehingga kurang relevan sebagai indikator kondisi patologis.
+  
 - **Kolerasi Antar Fitur Numerik Menggunakan Fungsi pairplot()**
   ![Multivariate 2](image/multivariate-2.png)
   
 - **Kolerasi Fitur Numerik dengan Menggunakan Heatmap Correlation Matrix**
   ![Multivariate 3](image/multivariate-3.png)
 
-  Matriks korelasi diatas menunjukkan bahwa terlihat adanya korelasi positif yang kuat yaitu pada ALB-PROT (0.53), CHE-CHOL (0.42), ALT-AST (0.43), dan AST-GGT (0.53). Hal ini menunjukkan bahwa semakin tinggi kadar ALB maka semakin tinggi pula kadar PROT-nya, semakin tinggi kadar CHE maka kemungkinan semakin tinggi pula kadar CHOL-nya, serta semakin tinggi kadar AST maka kemungkinan semakin tinggi pula kadar ALT dan GGT-nya. Korelasi positif yang lemah terlihat beberapa diantaranya yaitu hubungan Age-GGT (0.12), CREA-ALB(0.23), CHOL-ALB(0.19), ALP-CREA(0.6), ALP-GGT(0.16), ALT-PROT(0.2), ALT-CHOL(0.16), ALT-ALB(0.16), BIL-ALB(0.02), dan lainnya. Hal ini menunjukkan bahwa antar fitur memiliki hubungan namun tidak dominan. Korelasi negatif yang lemah terlihat pada Age-ALB(-0.19), ini berarti jika usia bertambah, maka kadar ALB cenderung turun sedikit. Namun korelasi antara keduanya memiliki pengaruh yang sangat kecil. Korelasi 0 seperti pada ALP-AST dan ALP-PROT menunjukkan tidak adanya hubungan diantara keduanya.
-
+  Matriks korelasi diatas menunjukkan bahwa terlihat adanya korelasi positif yang kuat yaitu pada ALB-PROT (0.56), GGT-ALP(0.45), CHE-CHOL (0.43), AST-BIL(0.31), ALT-AST (0.43), CHE-ALB (0.38), dan AST-GGT (0.49). Hal ini menunjukkan bahwa semakin tinggi kadar ALB maka semakin tinggi pula kadar PROT-nya, semakin tinggi kadar CHE maka kemungkinan semakin tinggi pula kadar CHOL-nya, serta semakin tinggi kadar AST maka kemungkinan semakin tinggi pula kadar ALT dan GGT-nya. Korelasi positif yang lemah terlihat beberapa diantaranya yaitu hubungan Age-GGT (0.15), ALP-CREA(0.15), ALT-PROT(0.09), ALT-CHOL(0.07), Age-AST (0.09), dan lainnya. Hal ini menunjukkan bahwa antar fitur memiliki hubungan namun tidak dominan. Korelasi negatif yang lemah terlihat pada BIL-CHE(-0.33), ini berarti jika ALB bertambah, maka kadar CHE cenderung turun sedikit. Korelasi 0 seperti pada ALB-ALT dan ALB-CREA menunjukkan tidak adanya hubungan diantara keduanya.
 
 ## Data Preparation
 Berikut ini teknik yang digunakan dalam tahap data preparation:
