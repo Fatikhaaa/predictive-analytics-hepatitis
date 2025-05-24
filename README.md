@@ -153,73 +153,21 @@ Sebagian besar fitur medis memiliki distribusi skewed, dimana fitur-fitur dengan
 - **Hubungan antara fitur-fitur terhadap fitur target (Category)**
   ![Bivariate 1](image/bivariate-1.png)
 
-  1. **ALB (Albumin)**:
-
-   * **Distribusi**: ALB pada kategori Normal memiliki median yang lebih tinggi daripada Abnormal, dengan rentang nilai lebih besar.
-   * **Outlier**: Terdapat beberapa outlier pada kedua kategori, yang menunjukkan adanya individu dengan nilai ALB yang sangat rendah atau sangat tinggi.
-   * **Variabilitas**: Rentang interkuartil (IQR) cukup sempit, menunjukkan sebagian besar data berada dalam rentang yang stabil.
-
-2. **ALP (Alkaline Phosphatase)**:
-
-   * **Distribusi**: Nilai ALP pada kategori Abnormal secara umum lebih tinggi daripada Normal.
-   * **Outlier**: Ada banyak outlier pada kategori Abnormal, terutama di nilai yang sangat tinggi, mengindikasikan adanya variabilitas tinggi pada data ini.
-   * **Variabilitas**: Kategori Abnormal memiliki IQR yang lebih lebar, menunjukkan distribusi data lebih menyebar dibandingkan Normal.
-
-3. **ALT (Alanine Transaminase)**:
-
-   * **Distribusi**: Median ALT lebih tinggi pada kategori Abnormal.
-   * **Outlier**: Banyak outlier pada kedua kategori, terutama di nilai tinggi pada Abnormal.
-   * **Variabilitas**: Abnormal memiliki rentang distribusi yang jauh lebih lebar dibandingkan Normal.
-
-4. **AST (Aspartate Transaminase)**:
-
-   * **Distribusi**: Nilai AST jauh lebih tinggi pada kategori Abnormal dibandingkan Normal.
-   * **Outlier**: Banyak outlier pada kategori Abnormal, tetapi ini dapat menjadi indikasi penting dalam membedakan kondisi.
-   * **Variabilitas**: Rentang distribusi sangat lebar pada Abnormal, sementara Normal cenderung lebih terkonsentrasi.
-
-5. **BIL (Bilirubin)**:
-
-   * **Distribusi**: Nilai BIL pada kategori Abnormal jauh lebih tinggi dibandingkan Normal.
-   * **Outlier**: Sangat banyak outlier pada kategori Normal, yang menunjukkan beberapa individu memiliki nilai abnormal meskipun tergolong Normal.
-   * **Variabilitas**: Abnormal memiliki distribusi yang lebih terpusat dibandingkan Normal.
-
-6. **CHE (Cholinesterase)**:
-
-   * **Distribusi**: Perbedaan antara kategori Normal dan Abnormal kurang signifikan.
-   * **Outlier**: Beberapa outlier pada kategori Normal dengan nilai sangat tinggi.
-   * **Variabilitas**: Distribusi pada kedua kategori cukup tumpang tindih.
-
-7. **CHOL (Cholesterol)**:
-
-   * **Distribusi**: CHOL pada kategori Normal cenderung lebih tinggi daripada Abnormal, tetapi perbedaan kecil.
-   * **Outlier**: Ada beberapa outlier, terutama pada kategori Normal.
-   * **Variabilitas**: Rentang distribusi data cukup seragam pada kedua kategori.
-
-8. **CREA (Creatinine)**:
-
-   * **Distribusi**: Distribusi CREA hampir sama antara Normal dan Abnormal.
-   * **Outlier**: Beberapa outlier pada kedua kategori, terutama di nilai tinggi.
-   * **Variabilitas**: Rentang distribusi cukup sempit, menunjukkan data ini kurang variabel.
-
-9. **GGT (Gamma-Glutamyl Transferase)**:
-
-   * **Distribusi**: Nilai GGT pada kategori Abnormal jauh lebih tinggi daripada Normal.
-   * **Outlier**: Banyak outlier pada kategori Abnormal, mengindikasikan adanya individu dengan nilai GGT yang sangat tinggi.
-   * **Variabilitas**: Rentang distribusi sangat lebar pada Abnormal.
-
-10. **PROT (Protein Total)**:
-
-    * **Distribusi**: PROT sedikit lebih tinggi pada Abnormal dibandingkan Normal, tetapi distribusinya cukup tumpang tindih.
-    * **Outlier**: Beberapa outlier di kedua kategori, tetapi jumlahnya tidak terlalu banyak.
-    * **Variabilitas**: IQR pada kedua kategori relatif serupa.
+  Berdasarkan hasil analisis visualisasi boxplot, terlihat adanya perbedaan distribusi yang mencolok antara kelompok pasien dengan kondisi hati normal dan yang mengalami gangguan/abnormal seperti hepatitis, sirosis, maupun fibrosis. Berikut informasi yang didapatkan dari visualisasi di atas:
+   
+  1. **ALB (Albumin)**: Parameter ALB (Albumin) menunjukkan bahwa nilai pada kategori Normal memiliki median yang lebih tinggi daripada Abnormal, dengan rentang nilai lebih besar. Terdapat beberapa outlier pada kedua kategori, yang menunjukkan adanya individu dengan nilai ALB yang sangat rendah atau sangat tinggi, serta rentang interkuartil (IQR) cukup sempit, menunjukkan sebagian besar data berada dalam rentang yang stabil.
+2. **ALP (Alkaline Phosphatase)**: Nilai ALP pada kategori Abnormal secara umum lebih tinggi daripada Normal. Terlihat banyak outlier pada kategori Abnormal, terutama di nilai yang sangat tinggi, mengindikasikan adanya variabilitas tinggi pada data ini. Dan kategori Abnormal memiliki IQR yang lebih lebar, menunjukkan distribusi data lebih menyebar dibandingkan Normal.
+3. **ALT (Alanine Transaminase)**: median ALT lebih tinggi pada kategori Abnormal. dan banyak outlier pada kedua kategori, terutama di nilai tinggi pada Abnormal. Abnormal memiliki rentang distribusi yang jauh lebih lebar dibandingkan Normal.
+4. **AST (Aspartate Transaminase)**: nilai AST jauh lebih tinggi pada kategori Abnormal dibandingkan Normal, dan banyak outlier pada kategori Abnormal, tetapi ini dapat menjadi indikasi penting dalam membedakan kondisi. Rentang distribusi sangat lebar pada Abnormal, sementara Normal cenderung lebih terkonsentrasi.
+5. **BIL (Bilirubin)**: nilai BIL pada kategori Abnormal jauh lebih tinggi dibandingkan Normal. Terdapat banyak sekali outlier pada kategori Normal, yang menunjukkan beberapa individu memiliki nilai abnormal meskipun tergolong Normal. Abnormal memiliki distribusi yang lebih terpusat dibandingkan Normal.
+6. **CHE (Cholinesterase)**: perbedaan antara kategori Normal dan Abnormal kurang signifikan. Beberapa outlier pada kategori Normal dengan nilai sangat tinggi dan distribusi pada kedua kategori cukup tumpang tindih.
+7. **CHOL (Cholesterol)**: CHOL pada kategori Normal cenderung lebih tinggi daripada Abnormal, tetapi perbedaan kecil. Ada beberapa outlier, terutama pada kategori Normal. Rentang distribusi data cukup seragam pada kedua kategori.
+8. **CREA (Creatinine)**: distribusi CREA hampir sama antara Normal dan Abnormal. Beberapa outlier pada kedua kategori, terutama di nilai tinggi dan rentang distribusi cukup sempit, menunjukkan data ini kurang variabel.
+9. **GGT (Gamma-Glutamyl Transferase)**: nilai GGT pada kategori Abnormal jauh lebih tinggi daripada Normal. Banyak outlier pada kategori Abnormal, mengindikasikan adanya individu dengan nilai GGT yang sangat tinggi. Serta, rentang distribusi sangat lebar pada Abnormal.
+10. **PROT (Protein Total)**: nilai sedikit lebih tinggi pada Abnormal dibandingkan Normal, tetapi distribusinya cukup tumpang tindih. Beberapa outlier di kedua kategori, tetapi jumlahnya tidak terlalu banyak dan IQR pada kedua kategori relatif serupa.
 
 ### Kesimpulan
 Fitur-fitur yang paling relevan untuk memprediksi kondisi (Normal atau Abnormal) berdasarkan visualisasi yaitu **BIL**, **AST**, **ALP**, **ALT**, dan **GGT** yang mana memiliki rentang distribusi yang berbeda jelas dan adanya outlier pada Abnormal. Hal ini memperkuat relevansi fitur tersebut untuk prediksi. Sedangkan fitur CHE dan CREA tampaknya kurang relevan karena distribusi antara kategori Normal dan Abnormal cenderung mirip.
-  Berdasarkan hasil analisis visualisasi boxplot, terlihat adanya perbedaan distribusi yang mencolok antara kelompok pasien dengan kondisi hati normal dan yang mengalami gangguan/abnormal seperti hepatitis, sirosis, maupun fibrosis. Parameter ALB (Albumin) dan ALP (Alkaline Phosphatase) menunjukkan bahwa nilai pada kelompok abnormal cenderung lebih rendah dibandingkan dengan kelompok normal, dengan sebaran yang lebih lebar yang mengindikasikan adanya ketidakstabilan fisiologis. Sebaliknya, ALT (Alanine Transaminase) memperlihatkan pola distribusi yang lebih tinggi dan menyebar luas pada kelompok abnormal, menandakan bahwa peningkatan kadar ALT dapat menjadi indikator awal adanya kerusakan hati. Hal serupa juga terjadi pada AST (Aspartate Transaminase) dan BIL (Bilirubin), yang menunjukkan peningkatan signifikan pada pasien dengan gangguan hati, dan bahkan memperlihatkan outlier pada kelompok normal meskipun tidak sebanyak pada kelompok abnormal.
-
-  Pada variabel CHE (Cholinesterase), nilai pada kelompok abnormal sedikit lebih rendah dengan distribusi yang lebih lebar dibandingkan normal, yang menggambarkan berkurangnya aktivitas enzim akibat gangguan fungsi hati. Parameter CHOL (Cholesterol) dan CREA (Creatinine) juga cenderung menurun pada pasien dengan kondisi abnormal, dengan distribusi nilai yang lebih sempit di kelompok abnormal. Hal ini menunjukkan bahwa kadar kolesterol dan kreatinin juga dapat menurun ketika fungsi hati menurun, meskipun perbedaan antara kelompok tidak setajam pada AST atau BIL. Sementara itu, GGT (Gamma-Glutamyl Transferase) menunjukkan lonjakan tajam pada kelompok abnormal, menjadikannya salah satu indikator paling jelas dalam mendeteksi kelainan hati, meskipun beberapa outlier juga ditemukan pada kelompok normal.
-
-  Parameter PROT (Protein Total) memperlihatkan bahwa nilai pada kelompok abnormal sedikit lebih tinggi dibanding kelompok normal, namun dengan variasi distribusi yang lebih kecil. Secara keseluruhan, tiga parameter yang paling mencolok dalam membedakan kondisi normal dan abnormal adalah AST, BIL, dan GGT. Ketiganya secara konsisten menunjukkan perbedaan yang signifikan, baik dari sisi nilai median maupun variasi distribusinya. Sementara itu, CHOL dan CHE juga menunjukkan penurunan pada kondisi abnormal, meskipun dengan skala yang lebih kecil. Oleh karena itu, kombinasi beberapa parameter ini sangat relevan digunakan dalam proses evaluasi klinis terhadap pasien dengan risiko gangguan hati.
   
 ### 3. Multivariate Analysis
 - **Analisis Distribusi Fitur-fitur Numerik dengan Data Kategorikal**
@@ -246,18 +194,21 @@ Karena kolom Unnamed:0 tidak diperlukan dalam analisis pada tahap selanjutnya, m
 df = df.drop(['Unnamed: 0'], axis=1)
 ```
 
-- **Encoding Fitur Kategoris**
+- **Penanganan Missing Value**
 
-  Langkah selanjutnya yaitu encoding fitur kategoris, dimana tahapan ini merupakan proses mengubah nilai dalam kolom kategorikal (seperti jenis kelamin dan kategori) menjadi bentuk numerik agar dapat diproses oleh algoritma machine learning.
+  Berikut kode yang digunakan untuk menangani missing value:
+  ```python # Mengisi missing value dengan nilai mean
+  def fill_selected_missing_with_mean(df, columns):
+      for col in columns:
+          df[col] = df[col].fillna(df[col].mean())
+      return df
   
-  Berikut kode yang digunakan untuk encoding:
-  ```python # Mengubah nilai di DataFrame untuk Gender dan Category menjadi Numerikal
-  df['Sex'] = df['Sex'].replace({'m': 0, 'f': 1})
-  df['Category'] = df['Category'].replace({'Normal' : 0, 'Abnormal': 1})
+  selected_columns = ['ALB', 'ALP', 'ALT', 'CHOL', 'PROT']
+  df = fill_selected_missing_with_mean(df, selected_columns)
+  print(df.isnull().sum())
   ```
-  
-   ![encoding](image/encoding.png)
 
+  ![Missing Value 2](image/missing-value2.png)
 
 - **Penanganan Outlier**
 
@@ -289,7 +240,18 @@ df = df.drop(['Unnamed: 0'], axis=1)
   
   ![outlier 2](image/outlier-2.png)
 
+- **Encoding Fitur Kategoris**
 
+  Langkah selanjutnya yaitu encoding fitur kategoris, dimana tahapan ini merupakan proses mengubah nilai dalam kolom kategorikal (seperti jenis kelamin dan kategori) menjadi bentuk numerik agar dapat diproses oleh algoritma machine learning.
+  
+  Berikut kode yang digunakan untuk encoding:
+  ```python # Mengubah nilai di DataFrame untuk Gender dan Category menjadi Numerikal
+  df['Sex'] = df['Sex'].replace({'m': 0, 'f': 1})
+  df['Category'] = df['Category'].replace({'Normal' : 0, 'Abnormal': 1})
+  ```
+  
+   ![encoding](image/encoding.png)
+  
 - **Data Splitting**
 
   Dataset akan dibagi menjadi dua set yaitu data training dan testing (dengan proporsi 80:20). Data training akan digunakan untuk melatih model, sedangkan untuk data testing akan digunakan untuk mengevaluasi kinerja dari model yang sudah dibangun. Splitting data ini penting untuk menghindari overfitting dan memastikan model dapat diuji pada data yang tidak digunakan selama proses pelatihan. Splitting data diperlukan agar proses transformasi hanya dilakukan pada data training saja. Data testing harus berperan sebagai data baru yang tidak terpengaruh oleh proses pelatihan, untuk menilai bagaimana model bekerja pada data yang belum pernah dilihat sebelumnya.
@@ -566,69 +528,77 @@ Nilai MSE lebih kecil menunjukkan bahwa prediksi model lebih mendekati nilai akt
 
 ## Result
 ### Analisa Hasil Metrik Evaluasi
-Setelah melakukan training model dan evaluasi model, hasil yang didapatkan menunjukkan performa model yang beragam tergantung pada algoritma yang digunakan. Dari evaluasi terhadap keempat model, berikut adalah hasil metrik evaluasi:
+Setelah melakukan training model dan evaluasi model, hasil yang didapatkan menunjukkan performa model yang beragam tergantung pada algoritma yang digunakan. Namun, setelah dilakukan proses tuning hyperparameter, hasil evaluasi menunjukkan tidak adanya peningkatan signifikan dibandingkan performa model sebelum tuning, baik pada metrik akurasi, precision, recall, maupun F1-score. Hal ini mengindikasikan bahwa parameter default yang digunakan sebelumnya sudah cukup optimal.
+
+![Tuning](image/tuning.png)
+
+Dari evaluasi terhadap keempat model, berikut adalah ringkasan metrik evaluasi untuk model yang diuji **sebelum dilakukan hyperparameter tuning**:
 
 ![Evaluasi](image/metrik-evaluasi.png)
 
 **1. Random Forest (RF):**
 
-- Akurasi: 98.37%
-- Precision: 98.4%
-- Recall: 98.37%
-- F1-Score: 98.32%
-
-Random Forest memberikan hasil yang sangat baik dalam mendeteksi hepatitis c, dengan akurasi dan recall yang tinggi. Model ini berhasil mendeteksi sebagian besar individu yang menderita Hepatitis C, disamping itu juga mampu mempertahankan tingkat kesalahan prediksi yang rendah.
+Random Forest memberikan hasil yang sangat baik dalam mendeteksi hepatitis c, dengan akurasi dan recall yang tinggi. Model ini berhasil mendeteksi sebagian besar individu yang menderita Hepatitis C, disamping itu juga mampu mempertahankan tingkat kesalahan prediksi yang rendah (false positives rendah). 
 
 **2. Decision Tree (DT):**
-- Akurasi: 97.56%
-- Precision: 97.51%
-- Recall: 97.56%
-- F1-Score: 97.52%
 
-Meskipun hasilnya hampir serupa dengan Random Forest, Decision Tree bisa lebih rentan terhadap overfitting dibandingkan dengan Random Forest karena tidak menggunakan ensemble learning, yang dapat membatasi kemampuan model untuk men-generalisasi pada data baru.
+Decision Tree bisa lebih rentan terhadap overfitting dibandingkan dengan Random Forest karena tidak menggunakan ensemble learning, yang dapat membatasi kemampuan model untuk men-generalisasi pada data baru (risiko overfitting karena single-tree structure) Konsistensi dalam precision-recall, tetapi tidak ideal untuk deteksi kasus prediksi medis.
 
 **3. Logistic Regression (LR):**
 
-- Akurasi: 95.12%
-- Precision: 95.12%
-- Recall: 95.12%
-- F1-Score: 95.12%
-
-Logistic Regression memberikan hasil yang solid, tetapi model ini menunjukkan kinerja yang lebih rendah dibandingkan dengan Random Forest dan Decision Tree, terutama dalam Recall, yang berarti model ini sedikit lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C.
+Logistic Regression memberikan hasil yang solid, tetapi model ini menunjukkan kinerja yang lebih rendah dibandingkan dengan Random Forest dan KNN, terutama dalam Recall (0.959), yang berarti model ini sedikit lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C (setiap 100 penderita, ~4 orang terlewat (false negatives)
 
 **4. K-Nearest Neighbors (KNN):**
 
-- Akurasi: 97.56%
-- Precision: 97.65%
-- Recall: 97.56%
-- F1-Score: 97.59%
+KNN memberikan hasil precison dan Recall yang seimbang. Namun, KNN menunjukkan hasil yang lebih rendah dibandingkan dengan model random forest, yang mengindikasikan bahwa KNN kurang optimal dan cenderung lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C. KNN kurang optimal dibanding RF karena sensitif terhadap noise dan scaling data.
 
-KNN memberikan hasil Precision dan Recall yang seimbang. Namun, KNN menunjukkan hasil yang lebih rendah dibandingkan dengan model lainnya, yang mengindikasikan bahwa KNN tidak optimal untuk dataset ini dan cenderung lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C.
+Terlihat model Random Forest menjadi model yang paling unggul dalam hal akurasi, presisi, recall, dan f1-score, diikuti oleh K-Nearest Neighbor (KNN), Logistic Regression dan Decision Tree.Ini mengindikasikan keseimbangan terbaik antara true positive dan true negative, serta false positive dan false negative. Model ini memberikan insight mengenai fitur yang paling relevan dan memberikan hasil yang optimal pada dataset yang diuji.
 
-Secara keseluruhan, Random Forest tetap menjadi model yang paling disarankan dengan nilai Recall yang sangat tinggi dan metrik evaluasi lainnya yang juga tinggi, diikuti oleh KNN, Logistic Regression, dan Decision Tree.
+Dari evaluasi terhadap keempat model, berikut adalah ringkasan metrik evaluasi untuk model yang diuji **setelah dilakukan hyperparameter tuning**:
+
+![Evaluasi 2](image/metrik-evaluasi2.png)
+
+**1. Random Forest (RF):**
+
+Random Forest menunjukkan hasil evaluasi yang paling unggul dibanding model lainnya. Dengan akurasi dan recall yang tinggi, berarti bahwa model ini berhasil mendeteksi sebagian besar individu yang menderita Hepatitis C, disamping itu juga mampu mempertahankan tingkat kesalahan prediksi yang rendah (false positives rendah). 
+
+**2. Decision Tree (DT):**
+
+Decision Tree menunjukkan kemampuan generalisasi terbatas (risiko overfitting karena single-tree structure)
+Konsistensi dalam precision-recall, tetapi tidak ideal untuk deteksi kasus medis seperti penyakit Hepatits.
+
+**3. Logistic Regression (LR):**
+
+Logistic Regression menunjukkan kinerja yang lebih rendah dibandingkan dengan Random Forest dan KNN, terutama dalam Recall, yang berarti model ini sedikit lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C.
+
+**4. K-Nearest Neighbors (KNN):**
+
+KNN memberikan hasil precison dan Recall yang seimbang. Tetapi, KNN menunjukkan hasil yang lebih rendah dibandingkan dengan model random forest, yang mengindikasikan bahwa KNN kurang optimal dan cenderung lebih sering melewatkan individu yang masuk ke dalam kategori penderita Hepatitis C. KNN kurang optimal dibanding RF karena sensitif terhadap noise dan scaling data.
+
+Secara keseluruhan, Random Forest tetap menjadi model yang paling disarankan setelah tuning dengan nilai akurasi, precision, recall, dan f1-score yang paling unggul, diikuti oleh Decision Tree, dengan Logistic Regression dan KNN.
 
 **Mean-Squared Error**
 
 ![MSE](image/mse.png)
 
-Model Random Forest (RF) dan Decision Tree (DT) menunjukkan nilai eror (MSE) yang paling kecil dibandingkan lainnya. Model KNN menunjukkan nilai eror yang cenderung tinggi. Sedangkan model dengan algoritma Logistic Regression memiliki eror yang paling besar (berdasarkan grafik, angkanya di atas 0.7). Sehingga model Random Forest yang akan kita pilih sebagai model terbaik untuk melakukan prediksi penyakit hepatitis C.
+Dari gambar di atas, terlihat bahwa model Random Forest (RF) menunjukkan performa terbaik dengan nilai eror (MSE) terendah pada data test, mengindikasikan kemampuan generalisasi yang baik. Model  K-Nearest Neighbors (KNN) dan Decision Tree terlihat cenderung sama dengan Random Forest tetapi pada nilai MSE data test menunjukkan jauh lebih tinggi dibandingkan Random Forest. Sedangkan Logistic Regression (LR) mencatat eror paling besar (MSE > 0.8 pada test set), disertai gap antara MSE train dan test.
 
 ### Model Terbaik Berdasarkan Metrik Evaluasi
-Setelah seluruh model machine learning dilatih menggunakan parameter default, diputuskan bahwa tidak dilakukan proses hyperparameter tuning lanjutan. Hal ini dikarenakan berdasarkan hasil evaluasi dari model, khususnya model Random Forest telah menunjukkan performa yang sangat baik, dengan skor evaluasi yang tinggi pada metrik **akurasi, presisi, recall, maupun F1-score**. Seluruh metrik tersebut menunjukkan bahwa model mampu memberikan hasil prediksi yang akurat dan seimbang antara deteksi positif dan negatif. Karena performanya sudah tergolong optimal, proses tuning parameter dianggap tidak diperlukan lagi dalam tahap ini, untuk menjaga efisiensi proses.
+Setelah seluruh model machine learning dilatih menggunakan parameter default, dan dilanjutkan dengan proses tuning model, hasilnya menunjukkan performansi yang sangat baik pada **model Random Forest, dengan skor evaluasi yang paling tinggi pada metrik akurasi, presisi, recall, maupun F1-score**. Seluruh metrik tersebut menunjukkan bahwa model mampu memberikan hasil prediksi yang akurat dan seimbang antara deteksi positif dan negatif.
 
-Pemilihan model terbaik dilakukan berdasarkan perbandingan hasil metrik evaluasi seluruh model yang diuji. Random Forest berhasil menghasilkan nilai akurasi yang tinggi, presisi yang baik dalam menghindari false positives, serta recall yang sangat penting dalam konteks medis, yang menunjukkan kemampuannya dalam menangkap semua kasus yang seharusnya terdeteksi (mencegah false negatives). Kesalahan berupa *false negatives* yaitu pasien yang sebenarnya menderita hepatitis namun tidak terdeteksi oleh model yang dapat berdampak serius karena mereka tidak akan menerima perawatan yang diperlukan. Oleh karena itu, model dengan nilai **Recall** yang tinggi sangat diutamakan untuk memaksimalkan deteksi kasus penyakit. Dalam hal ini, model **Random Forest** memberikan skor Recall yang lebih tinggi dibandingkan model lainnya, seperti Logistic Regression, K-Nearest Neighbors, maupun Decision Tree. Selain itu, nilai F1-score juga tinggi, menandakan keseimbangan performa antara presisi dan recall.
+Pemilihan model terbaik dilakukan berdasarkan perbandingan hasil metrik evaluasi seluruh model yang diuji. Random Forest berhasil mencatatkan nilai akurasi yang tinggi, presisi yang baik dalam menghindari false positives, serta recall yang sangat penting dalam konteks medis, yang menunjukkan kemampuannya dalam menangkap semua kasus yang seharusnya terdeteksi (mencegah false negatives). Selain itu, nilai F1-score juga tinggi, menandakan keseimbangan performa antara presisi dan recall.
 
-Ditambah lagi, hasil evaluasi menggunakan MSE (Mean Squared Error) menunjukkan bahwa model Random Forest memiliki nilai MSE terendah dibandingkan model lainnya, yang berarti prediksi yang dihasilkan lebih mendekati nilai aktual. Dengan performa terbaik di seluruh metrik utama dan MSE yang rendah, **Random Forest dipilih sebagai model terbaik** dalam proyek ini karena memberikan prediksi yang paling akurat, stabil, dan andal untuk mendeteksi kondisi pasien hepatitis C.
+Ditambah lagi, hasil evaluasi menggunakan MSE (Mean Squared Error) menunjukkan bahwa **model Random Forest memiliki nilai MSE terendah** dibandingkan model lainnya, yang berarti prediksi yang dihasilkan lebih mendekati nilai aktual. Meskipun model KNN menunjukkan hasil yang cenderung sama pada MSE, jika dibandingkan dengan hasil evaluasi menggunakan metrik evaluasi, model Random Forest lebih unggul dibandingkan KNN. Sehingga berdasarkan performa terbaik di seluruh metrik utama dan MSE yang rendah, **Random Forest dipilih sebagai model terbaik** dalam proyek ini karena memberikan prediksi yang paling akurat, stabil, dan andal untuk mendeteksi kondisi pasien Hepatitis C.
 
 ### Predict
 
 ![Prediksi](image/prediksi.png)
 
-Untuk hasil prediksi, terlihat nilai terdekat dari nilai sesungguhnya (0) adalah Random Forest, dan Decision Treen sebesar 0, dan yang paling jauh dari nilai sesungguhnya adalah Logistic Regression dan KNN sebesar 1. Sehingga tetap model Random Forest yang paling unggul dan dapat dipilih untuk pemodelan yang terbaik dalam proyek ini.
+Untuk hasil prediksi, terlihat nilai terdekat dari nilai sesungguhnya (0) adalah Random Forest,KNN, dan Decision Tree sebesar 0, dan yang paling jauh dari nilai sesungguhnya adalah Logistic Regression sebesar 1. Sehingga tetap model Random Forest yang paling unggul dan dapat dipilih untuk pemodelan yang terbaik dalam proyek ini berdasarkan hasil evaluasi menggunakan metrik evaluasi yang telah dilakukan pada tahap sebelumnya.
 
 ### Evaluasi Terhadap Business Understanding
 1. Model machine learning yang dibangun berhasil memprediksi individu yang menderita Hepatitis C dengan menggunakan data medis hasil pemeriksaan darah, yang meliputi kadar ALB (Albumin), ALP (Alkaline Phosphatase), ALT (Alanine Aminotransferase), Aspartate Aminotransferase (AST), BIL (Bilirubin), CHE (Cholinesterase), CHOL (Cholesterol), CREA (Creatinine), GGT (Gamma-Glutamyl Transferase), dan PROT (Protein Total). Penggunaan beberapa algoritma machine learning seperti Random Forest, Decission Tree, Logistic Regression, dan K-Nearest Neighbors memungkinkan model untuk mengklasifikasikan status Hepatitis C (Normal yang berarti sehat dan Abnormal yang berarti positif terkena hepatitis). Melalui eksplorasi data dan analisis fitur, model ini memberikan solusi yang lebih cepat dalam mendeteksi Hepatitis C.
-2. Dengan menggunakan metode Exploratory Data Analysis (EDA), ditemukan bahwa parameter yang paling berpengaruh dalam membedakan status pasien penderita Hepatitis C adalah AST, GGT, BIL, dan CHE. AST menjadi parameter paling konsisten terlihat berpengaruh berdasarkan semua hasil analisis, dimana pada bivariate analysis, AST memiliki perbedaan nilai yang mencolok antara kelompok normal dan abnormal. Dalam korelasi, AST juga memiliki hubungan kuat dengan ALT dan GGT (masing-masing korelasi 0.43 dan 0.53), memperkuat perannya sebagai indikator penting dalam kondisi patologis hati. Selain itu, GGT sangat menonjol khususnya pada pasien laki-laki berdasarkan visualisasi barplot (grouped by Sex dan Category). Selain itu, GGT juga berkorelasi tinggi dengan AST, memperkuat peranannya. Untuk BIL (Bilirubin) menunjukkan distribusi yang signifikan dalam membedakan pasien normal dan abnormal berdasarkan hasil bivariate analysis, sehingga menjadikannya indikator penting dalam klasifikasi pasien hepatitis. CHE (Cholinesterase) memiliki nilai rata-rata yang lebih rendah pada kelompok abnormal dibanding normal. Hal ini juga didukung oleh hasil barplot yang menunjukkan perbedaan signifikan serta korelasi moderat dengan CHOL (0.42). Dapat disimpulkan bahwa AST dan GGT konsisten menonjol dalam semua jenis analisis, sementara BIL dan CHE memberikan tambahan informasi klinis yang kuat, sehingga sangat layak dijadikan fitur utama dalam pemodelan prediksi status Hepatitis C.
+2. Dengan menggunakan metode Exploratory Data Analysis (EDA), ditemukan bahwa parameter yang paling berpengaruh dalam membedakan status pasien penderita Hepatitis C adalah AST, GGT, BIL, dan ALP. AST menjadi parameter paling konsisten terlihat berpengaruh berdasarkan semua hasil analisis, dimana pada bivariate analysis, AST memiliki perbedaan nilai yang mencolok antara kelompok normal dan abnormal. Dalam korelasi, AST juga memiliki hubungan kuat dengan GGT (0.49), memperkuat perannya sebagai indikator penting dalam kondisi patologis hati. Selain itu, GGT sangat menonjol khususnya pada pasien laki-laki berdasarkan visualisasi barplot (grouped by Sex dan Category) dan juga  menunjukkan korelasi tinggi dengan AST, sehingga memperkuat peranannya sebagai parameter yang berpengaruh. Untuk BIL (Bilirubin) menunjukkan distribusi yang signifikan dalam membedakan pasien normal dan abnormal berdasarkan hasil bivariate analysis, sehingga menjadikannya indikator penting dalam klasifikasi pasien hepatitis. Untuk ALP, terlihat adanya korelasi kuat dengan GGT (0.45) Fitur ini memperlihatkan perbedaan distribusi yang jelas antara kategori Normal dan Abnormal, serta adanya outlier yang signifikan pada kategori Abnormal. Hal ini mengindikasikan bahwa fitur ALP sangat relevan untuk prediksi kondisi patologis. Fitur lainnya, seperti ALT, CHE, ALB, CHOL, CREA, dan PROT, tidak menunjukkan perbedaan mencolok dalam distribusi antara kelompok Normal dan Abnormal. Meskipun beberapa dari mereka memiliki korelasi moderat dengan parameter lain (misalnya, CHE-CHOL dengan korelasi 0.43), fitur-fitur ini dianggap kurang relevan dibandingkan dengan parameter utama. Dapat disimpulkan bahwa AST dan GGT adalah parameter yang paling menonjol dalam semua jenis analisis, sementara BIL dan ALP memberikan informasi tambahan yang kuat. Keempat fitur ini sangat layak dijadikan parameter utama dalam pemodelan prediksi status Hepatitis C.
 3. Kinerja model berhasil diukur menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F-1 Score, yang masing-masing memberikan gambaran menyeluruh terkait kinerja klasifikasi. Selain itu, digunakan juga metrik Mean Squared Error (MSE) untuk mengukur rata-rata kuadrat kesalahan prediksi, sehingga dapat mengidentifikasi seberapa jauh prediksi model menyimpang dari nilai sebenarnya. Hasil evaluasi menunjukkan bahwa model Random Forest menghasilkan nilai evaluasi yang paling tinggi dan tingkat error yang paling rendah dibandingkan model lain, sehingga dianggap paling akurat dan andal dalam mengklasifikasikan kondisi pasien secara efektif.
 
 
