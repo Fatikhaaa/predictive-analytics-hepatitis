@@ -262,7 +262,7 @@ df = df.drop(['Unnamed: 0'], axis=1)
   
 - **Penanganan Imbalance Data**
 
-  Pada tahap EDA (Exploratory Data Analysis), diketahui terdapat ketidakseimbangan kelas pada kolom Category (Normal dan Abnormal). Oleh karena itu, perlu dilakukan penanganan untuk menyeimbangkan kelas menggunakan SMOTE(Synthetic Minority Over-sampling Technique). Penanganan imbalance data dilakukan dengan teknik SMOTE, yaitu metode yang membuat data sintetik pada kelas minoritas agar distribusi kelas menjadi lebih seimbang tanpa sekadar menduplikasi data. Dalam tahap ini, SMOTE diterapkan hanya pada data training dengan target keseimbangan 75%, kemudian divisualisasikan untuk membandingkan distribusi kelas sebelum dan sesudah dilakukan oversampling.
+  Pada tahap EDA (Exploratory Data Analysis), diketahui terdapat ketidakseimbangan kelas pada kolom Category (Normal dan Abnormal). Oleh karena itu, perlu dilakukan penanganan untuk menyeimbangkan kelas menggunakan SMOTE(Synthetic Minority Over-sampling Technique). Penanganan imbalance data dilakukan dengan teknik SMOTE, yaitu metode yang membuat data sintetik pada kelas minoritas agar distribusi kelas menjadi lebih seimbang tanpa sekadar menduplikasi data. Dalam tahap ini, SMOTE diterapkan hanya pada data training dengan target keseimbangan 80%, kemudian divisualisasikan untuk membandingkan distribusi kelas sebelum dan sesudah dilakukan oversampling.
 
   Berikut ini adalah tampilan dari perbandingan data sebelum dan setelah dilakukan penerapan SMOTE:
   ![Imbalance Data](image/imbalance-data.png)
