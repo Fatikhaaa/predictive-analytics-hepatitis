@@ -1,0 +1,426 @@
+[33mcommit b168da6c292882b1ddf93163361f161f8e4e00a1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: cba400e d190750
+Author: Fatikhaaa <fatikhahudiaryani03@gmail.com>
+Date:   Sat May 24 16:12:51 2025 +0700
+
+    Menambahkan semua file gambar ke folder image
+
+[33mcommit cba400e1541c7a91368029a557029f449130a43e[m
+Author: Fatikhaaa <fatikhahudiaryani03@gmail.com>
+Date:   Sat May 24 16:05:30 2025 +0700
+
+    third commit
+
+[33mcommit d190750c5880b659f2e60f76faa63d96546669ad[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 16:01:53 2025 +0700
+
+    Delete image directory
+
+[33mcommit b382a55b0d2a20cb1a6656f513d2b1b961840487[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 16:01:05 2025 +0700
+
+    Create test
+
+[33mcommit 5e8bfe62c38a0166a111cc7a838cec451b86e3fb[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 16:00:21 2025 +0700
+
+    Delete image directory
+
+[33mcommit a6f580854a0f88d1f8c5d739f6aea236d13566c4[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:38:55 2025 +0700
+
+    Add files via upload
+
+[33mcommit 5b1443041b694d2f8348ea1cc520f04a69769c08[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:38:19 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit d833c42c3ba2e9fd06133bdb593a6bc6ebb6c7f0[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:37:55 2025 +0700
+
+    Delete mlt_predictive_analytics.py
+
+[33mcommit 3aa966c988a6cd8d7fb609c448817c2e58c0e2d8[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:36:18 2025 +0700
+
+    Delete MLT_Predictive_Analytics.ipynb
+
+[33mcommit 73f3aa2f2d00762cf3de2be9f9f9b105cac0bb71[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:30:33 2025 +0700
+
+    Add files via upload
+
+[33mcommit 092f687db2882e389c6ca7ea00064609148bb31b[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:29:21 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit 43f5b40682fba7678112afcae268e7b363a3ea56[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:28:38 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit a387fbdfdee21b76f81290998db1904bf9b1204f[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 15:26:56 2025 +0700
+
+    Delete MLT_Predictive_Analytics.ipynb
+
+[33mcommit 650046595110880a9869b9925ab1eba39cf46c06[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 14:23:22 2025 +0700
+
+    Delete mlt_predictive_analytics.py
+
+[33mcommit 198ef66aa4f853cd6b1dfdb22acf1b01feb24328[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 13:34:37 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit d782e7612898549f4561c0272f94f7ec13578da9[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 13:34:07 2025 +0700
+
+    Delete MLT_Predictive_Analytics.ipynb
+
+[33mcommit 17d5a3632082c146ba0e603221e25d576db02c68[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 13:33:52 2025 +0700
+
+    Add files via upload
+
+[33mcommit 2d4b88a5d5088b74e0daa63c8365dc0f75fbd264[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Sat May 24 13:33:28 2025 +0700
+
+    Delete mlt_predictive_analytics.py
+
+[33mcommit fa0216ddbae267b2e65e169e0b4b377f719d8844[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 05:00:35 2025 +0700
+
+    Update README.md
+
+[33mcommit 8c0e90dc9f88e9fcca35887687d0d70a804bf889[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:59:16 2025 +0700
+
+    Add files via upload
+
+[33mcommit 4904b8cda9b1ad3719c2251290de73effabaee54[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:56:09 2025 +0700
+
+    Delete data/HepatitisCdata (1).csv
+
+[33mcommit c4dd9bfcaed707e2ed2ebe07b17a0164be719c7d[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:55:53 2025 +0700
+
+    Add files via upload
+
+[33mcommit 12faac12ce3a89a3d89044537209f81d15caeea7[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:54:41 2025 +0700
+
+    Delete data/data
+
+[33mcommit 94bc8f463cc8c48c3d4a08190591d3f6cbfaf407[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:54:20 2025 +0700
+
+    Add files via upload
+
+[33mcommit b6be642d6489cfcef39025ac3ebb801b306eac7e[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:53:25 2025 +0700
+
+    Create data
+
+[33mcommit 6c5678e9ceba47394cda88d82adf22455e043372[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:51:12 2025 +0700
+
+    Update README.md
+
+[33mcommit 347c79f6da1b33ad6454648d271f1d1b4eda94d9[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:47:39 2025 +0700
+
+    Add files via upload
+
+[33mcommit 171893a9b56a5877120894a5260e35e7b4b10c24[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:46:05 2025 +0700
+
+    Delete image/prediksi.png
+
+[33mcommit d00ac2a7ff38b9eb82e319c9ada0783406442c18[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:44:59 2025 +0700
+
+    Delete image/standarisasi.png
+
+[33mcommit b029b215bf9cf660097b0fb5454785541bb1a4a0[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:42:50 2025 +0700
+
+    Add files via upload
+
+[33mcommit dc1cbe19cb9664f7fc865355424ab2e987bee3e9[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:42:16 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit 60780827b398d68c5023e2ea523f40f0674877c9[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:41:38 2025 +0700
+
+    Delete MLT_Predictive_Analytics.ipynb
+
+[33mcommit 4ed9c5dd7509e00f0f094b6d9490c146cf2b3df3[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:20:41 2025 +0700
+
+    Update README.md
+
+[33mcommit c80ea8ec3b7a56ee2f40f2a63c768a8a5c469642[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:17:15 2025 +0700
+
+    Add files via upload
+
+[33mcommit 51dd857780fde952e96c02183d6d5ccc8e46deb8[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:07:58 2025 +0700
+
+    Update README.md
+
+[33mcommit 9bd6b53ed19a31c87b62249d7c17b14fc2a5a166[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:05:51 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit dedc97dafa1be88cd0a377273e202ac2341b5960[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 04:05:19 2025 +0700
+
+    Delete MLT_Predictive_Analytics.ipynb
+
+[33mcommit 22ec2479f4b06182886d6d65f329df4e5eab1ce2[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 03:55:49 2025 +0700
+
+    Update README.md
+
+[33mcommit c739bb4b27a31ef267778a23cf3d46c83a020324[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 03:36:49 2025 +0700
+
+    Dibuat menggunakan Colab
+
+[33mcommit 683def4e875fee095c42c0ac6a42cda373c585e7[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 02:29:02 2025 +0700
+
+    Add files via upload
+
+[33mcommit 6f564395d3419e08ddf24659321bdde27cf6e045[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:28:16 2025 +0700
+
+    Update README.md
+
+[33mcommit cea0a2754b498905474413e254860c1a5ebcc653[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:26:50 2025 +0700
+
+    Update README.md
+
+[33mcommit d4f846c3b377e6b908b6f02b4270933eee01dacf[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:26:39 2025 +0700
+
+    Add files via upload
+
+[33mcommit 0b19bf5f8b25a71d804b0c0b1829341345234486[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:17:43 2025 +0700
+
+    Update README.md
+
+[33mcommit c45d862f44e3e0391a0ab9780cd93c5aecb36b77[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:12:59 2025 +0700
+
+    Update README.md
+
+[33mcommit d6124f838b8332ee617de79feb67b0ca0060e63a[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:08:49 2025 +0700
+
+    Add files via upload
+
+[33mcommit 9d0f976569e0ada565e138608a32bb15e75b6fbf[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:08:28 2025 +0700
+
+    Delete image/outlier-2.png
+
+[33mcommit 1203e35941e90a3177f78b0556b8aa5320fa3230[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:07:44 2025 +0700
+
+    Update README.md
+
+[33mcommit e342da6b60900409e5311c4347be1f0ab794370d[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:02:02 2025 +0700
+
+    Add files via upload
+
+[33mcommit 794eeff94d0b0ff620a97301f8a81fe111609222[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Thu May 22 00:01:13 2025 +0700
+
+    Delete image/outlier-1.png
+
+[33mcommit 8574798e864b44cd6519808ff4fa47fdb9ce8e38[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 23:59:15 2025 +0700
+
+    Update README.md
+
+[33mcommit 91cd4f8faffd15a3560ff26e2d0eb57ea749d153[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 23:44:15 2025 +0700
+
+    Update README.md
+
+[33mcommit 032ab8eebf02045a798bdb14ef619ad652369017[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 22:21:22 2025 +0700
+
+    Add files via upload
+
+[33mcommit 6c393ef35f59b995a0064c0ddaab6f50344716d3[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 21:58:31 2025 +0700
+
+    Add files via upload
+
+[33mcommit bc551574e14b7a14ccd730e9cdd063d77b2894db[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 21:57:27 2025 +0700
+
+    Delete image/outlier-3.png
+
+[33mcommit da1abd10fa248dcf536a0c20d27423a161b0dcdd[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:54:44 2025 +0700
+
+    Update README.md
+
+[33mcommit 1a01ccbe7ddde69d84d5d8e31ab0a8b6a248c9b7[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:30:22 2025 +0700
+
+    Update README.md
+
+[33mcommit 40444854aa5bdca1a78330b530786079b8c93eee[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:28:51 2025 +0700
+
+    Update README.md
+
+[33mcommit 3f17d6766ebccb0ea469d3e7cff05a8cde7d62e2[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:21:11 2025 +0700
+
+    Update README.md
+
+[33mcommit 2fcae7fd015b72083fa371b191b094bddef4383d[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:18:50 2025 +0700
+
+    Add files via upload
+
+[33mcommit e5ab9bbfce47d8b671d62476d65f441d62d5c007[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:14:42 2025 +0700
+
+    Add files via upload
+
+[33mcommit 2ae8b93b35bc75c40b9f6d6eefc5ae37e5f8b71c[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:13:20 2025 +0700
+
+    Update README.md
+
+[33mcommit ec50c6890295f59eb1992d44e309ba606ed8a316[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 18:12:56 2025 +0700
+
+    Update README.md
+
+[33mcommit a772c43b48479dff1978f2a9a0e8dae79a0e27e3[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 17:20:08 2025 +0700
+
+    Delete image/images
+
+[33mcommit 2afdc1df9f92df1782e3b5235cc14808ce3c6422[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 17:19:43 2025 +0700
+
+    Add files via upload
+
+[33mcommit a2fdf4e695fcee410f3e0765928d1c1b3dfbe70d[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 17:19:05 2025 +0700
+
+    Create images
+
+[33mcommit 15952c49a4df927d1a2234f6b6d38c6c052ace4c[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 17:17:39 2025 +0700
+
+    Update README.md
+
+[33mcommit 72d4caf1d2cbf67721429e87b8df062b76403f7f[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 14:07:10 2025 +0700
+
+    Update README.md
+
+[33mcommit 196edc4fff7ef97dfa34951b440ea8087b46a642[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Wed May 21 13:48:58 2025 +0700
+
+    Update README.md
+
+[33mcommit a55243b2fcbc958ff66bec7053431e2327a9a63c[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Tue May 20 15:34:14 2025 +0700
+
+    Update README.md
+
+[33mcommit b7c4469661dcab936312fa70afa829fa57dfd283[m
+Author: Fatikhaaa <124246790+Fatikhaaa@users.noreply.github.com>
+Date:   Mon May 19 04:21:37 2025 +0700
+
+    Create README.md
