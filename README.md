@@ -85,12 +85,6 @@ Dataset yang digunakan dalam proyek ini merupakan [Hepatitis C Dataset](https://
 | 13 | GGT         | 615            | float64   |
 | 14 | PROT        | 614            | float64   |
 
-Karena kolom Unnamed:0 tidak diperlukan dalam analisis pada tahap selanjutnya, maka kita perlu drop kolom tersebut dengan menggunakan fungsi drop().
-
-```python # Menghapus kolom yang tidak diperlukan 
-df = df.drop(['Unnamed: 0'], axis=1)
-```
-
 ### Statistik Deskriptif pada Kolom Numerik
 ![Deskripsi Statistik](image/deskripsi-statistik.png)
 
@@ -140,9 +134,19 @@ Berdasarkan hasil dari perhitungan outlier dengan menggunakan metode Interquarti
 - **Analisis Distribusi Data Numerik**
   ![Univariate 2](image/univariate-2.png)
 
-  Berdasarkan tampilan histogram di atas, dapat disimpulkan bahwa data usia (**Age**) mencakup rentang 20 hingga 70 tahun, dengan mayoritas kasus terkonsentrasi pada kelompok usia 30 hingga 50 tahun. Untuk variabel **Albumin (ALB)**, nilai umumnya berada pada kisaran 35 hingga 50, dengan puncak yang signifikan terletak antara 40 hingga 50. Selanjutnya, distribusi nilai **Alkaline Phosphatase (ALP)** tampak menyerupai distribusi normal dengan puncak antara 60 hingga 80, meskipun terdapat sedikit data yang berada di luar kisaran 20 hingga 120. Sementara itu, **Alanine Transaminase (ALT)** memiliki distribusi yang miring ke kanan (right-skewed), dengan konsentrasi nilai tertinggi antara 10 hingga 30 dan beberapa nilai ekstrem mendekati 50. Pola distribusi yang serupa juga terlihat pada **Aspartate Transaminase (AST)**, di mana nilai-nilai data cenderung terkonsentrasi di rentang 10 hingga 30, dan terdapat nilai tinggi yang hampir mencapai 50.
+  Berdasarkan grafik histogram dari fitur numerik dalam dataset Hepatitis C, berikut adalah beberapa informasi yang diperoleh:
 
-  Untuk variabel **Bilirubin (BIL)**, sebagian besar data berada dalam rentang 5 hingga 10, namun ada beberapa nilai ekstrem yang mendekati angka 20. Pada variabel **Cholinesterase (CHE)**, distribusi mendekati bentuk normal, dengan nilai puncak antara 6 hingga 10 dan rentang keseluruhan dari 4 hingga 14. Sementara itu, **Cholesterol (CHOL)** menunjukkan distribusi sempit dengan nilai yang sebagian besar terletak di kisaran 5 hingga 7 dan hanya sedikit variasi. Nilai **Creatinine (CREA)** umumnya berada di antara 60 hingga 100, dengan distribusi yang cukup terpusat meskipun ada beberapa nilai ekstrem di atas 100. Untuk **Gamma-Glutamyl Transferase (GGT)**, distribusinya juga miring ke kanan, di mana nilai tinggi yang mendekati 80 tampak sebagai outlier. Terakhir, **Protein Total (PROT)** memiliki distribusi yang stabil dan terpusat pada kisaran 70 hingga 80, dengan variasi yang relatif kecil.
+1. **Distribusi Usia (Age):** Data usia pasien tersebar dalam rentang 20–80 tahun, dengan konsentrasi tertinggi pada usia 30–50 tahun. Distribusi ini menunjukkan bahwa kebanyakan pasien berada pada usia produktif hingga menjelang lansia.
+2. **Distribusi Fitur Klinis:**
+   * **ALB, CHE, CHOL, dan PROT** menunjukkan distribusi yang relatif mendekati normal, dengan bentuk simetris dan puncak yang jelas di tengah rentang data. Ini mengindikasikan variasi nilai yang cukup stabil dalam populasi pasien.
+   * **ALP, ALT, AST, BIL, GGT, dan CREA** memiliki distribusi **miring ke kanan (right-skewed)**, menunjukkan adanya **nilai-nilai ekstrem (outliers)** di sisi kanan grafik. Ini umum terjadi pada data medis karena kondisi abnormal biasanya menghasilkan lonjakan nilai.
+   * **GGT dan AST** menunjukkan rentang nilai yang sangat lebar, mengindikasikan bahwa fitur ini mungkin sensitif terhadap kondisi patologis yang berat.
+3. **Outliers dan Skewness:**
+   Banyak fitur seperti **ALT, AST, BIL, GGT, dan CREA** memperlihatkan skewness tinggi dan rentang nilai yang luas. Hal ini mengindikasikan perlunya transformasi atau penanganan outlier untuk meningkatkan performa model prediktif.
+4. **Fitur `Unnamed: 0`:** Histogram fitur ini merata dan tidak memiliki arti informatif. Untuk fitur ini akan dihapus pada tahap data preparation karena tidak diperlukan.
+
+**Kesimpulan**
+Sebagian besar fitur medis memiliki distribusi skewed, dimana fitur-fitur dengan distribusi normal (seperti CHE dan PROT) menunjukkan kestabilan dan bisa menjadi indikator tambahan yang berguna dalam pemodelan. Sementara itu, fitur dengan distribusi miring dan outlier tinggi (seperti GGT dan AST) dapat menjadi sinyal penting untuk mengidentifikasi kondisi abnormal seperti Hepatitis C.
   
 ### 2. Bivariate Analysis
 
@@ -172,6 +176,14 @@ Berdasarkan hasil dari perhitungan outlier dengan menggunakan metode Interquarti
 
 ## Data Preparation
 Berikut ini teknik yang digunakan dalam tahap data preparation:
+
+- **Hapus Kolom yang Tidak Diperlukan**
+
+Karena kolom Unnamed:0 tidak diperlukan dalam analisis pada tahap selanjutnya, maka kita perlu drop kolom tersebut dengan menggunakan fungsi drop().
+
+```python # Menghapus kolom yang tidak diperlukan 
+df = df.drop(['Unnamed: 0'], axis=1)
+```
 
 - **Encoding Fitur Kategoris**
 
